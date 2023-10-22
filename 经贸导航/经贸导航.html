@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" charset="utf-8" />
+    <title>经贸导航栏</title>
+    <link href="jm.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <script src="jquery-3.4.1.min.js">
+    </script>
+    <script>
+        $(function() {
+            $("div").children("ul").children("li").children("ul").hide();
+            $("div").children("ul").children("li").mouseenter(function() {
+                $(this).children("ul").show()
+                $(this).css({
+                    "background": "rgb(19,53,116)",
+                    "border-bottom": "5px solid rgb(255,183,28)"
+                });
+            });
+            $("div").children("ul").children("li").mouseleave(function() {
+                $("div").children("ul").children("li").children("ul").hide();
+                $(this).css({
+                    "background": "rgb(36,71,137)",
+                    "border-bottom": "0px solid rgb(36,71,137)"
+                });
+                $(".hover").css({
+                    "border-bottom": "5px solid rgb(255,183,28)"
+                });
+            });
+            $("div").children("ul").children("li").children("ul").children("li").mouseenter(function() {
+                $(this).css({
+                    "background": "rgb(54,92,163)"
+                });
+            });
+            $("div").children("ul").children("li").children("ul").children("li").mouseleave(function() {
+                $(this).css({
+                    "background": " rgb(36,71,137)"
+                });
+            });
+        });
+    </script>
+    <div id="a">
+        <ul>
+            <li class="hover"><a href="index.htm">网站首页</a></li>
+            <li><a href="http://www.xzjm.cn/xxgk/xxjj.htm" target="_blank">学校概况</a>
+                <ul>
+                    <li><a href="http://www.xzjm.cn/xxgk/xxjj.htm" target="_blank">学校简介</a></li>
+                    <li><a href="http://www.xzjm.cn/xxgk/xrld.htm" target="_blank">现任领导</a></li>
+                    <li><a href="http://www.xzjm.cn/xxgk/lsyg.htm" target="_blank">历史沿革</a></li>
+                    <li><a href="http://www.xzjm.cn/xxgk/xxzc.htm" target="_blank">学校章程</a></li>
+                    <li><a href="http://www.xzjm.cn/xxgk/xywh/xx.htm" target="_blank">校园文化</a></li>
+                    <li><a href="http://www.xzjm.cn/xxgk/lxwm.htm" target="_blank">联系我们</a></li>
+                </ul>
+            </li>
+            <li><a href="#" target="_blank">新闻中心</a>
+                <ul>
+                    <li><a href="http://www.xzjm.cn/xwzx/xxxw.htm" target="_blank">学校新闻</a></li>
+                    <li><a href="http://www.xzjm.cn/xwzx/xbdt.htm" target="_blank">系部动态</a></li>
+                    <li><a href="http://www.xzjm.cn/xwzx/tzgg.htm" target="_blank">通知公告</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.xzjm.cn/jgsz.htm" target="_blank">机构设置</a>
+            </li>
+            <li><a href="#" target="_blank">党群工作</a>
+                <ul>
+                    <li><a href="http://www.xzjm.cn/zzrs/" target="_blank">党建工作</a></li>
+                    <li><a href="http://www.xzjm.cn/dqgz/ztjy.htm" target="_blank">主题教育</a></li>
+                    <li><a href="http://www.xzjm.cn/gh/" target="_blank">职工之家</a></li>
+                    <li><a href="http://www.xzjm.cn/tw/" target="_blank">共青家园</a></li>
+                    <li><a href="http://www.xzjm.cn/dqgz/wmcj.htm" target="_blank">文明创建</a></li>
+                </ul>
+            </li>
+            <li><a href="#" target="_blank">教学科研</a>
+                <ul>
+                    <li><a href="http://www.xzjm.cn/jwc/" target="_blank">教学管理</a></li>
+                    <li><a href="http://www.xzjm.cn/jykyc/" target="_blank">科研管理</a></li>
+                    <li><a href="http://www.xzjm.cn/dds/" target="_blank">质量监控</a></li>
+                    <li><a href="http://www.xzjm.cn/jxky/jxxb1.htm" target="_blank">教学系部</a></li>
+                    <li><a href="http://www.xzjm.cn/jxky/zlnb.htm" target="_blank">质量年报</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.xzjm.cn/zyjs/zysz.htm" target="_blank">专业建设</a>
+                <ul>
+                    <li><a href="http://www.xzjm.cn/zyjs/zysz.htm" target="_blank">专业设置</a></li>
+                    <li><a href="http://www.xzjm.cn/zyjs/szdw.htm" target="_blank">师资队伍</a></li>
+                    <li><a href="http://www.xzjm.cn/zyjs/sxjd.htm" target="_blank">实训基地</a></li>
+                    <li><a href="http://www.xzjm.cn/zyjs/cjrh.htm" target="_blank">产教融合</a></li>
+                </ul>
+            </li>
+            <li><a href="<span style='color:red;font-size:9pt'>转换链接错误</span>" target="_blank">学生工作</a>
+                <ul>
+                    <li><a href="http://www.xzjm.cn/xsc/" target="_blank">学生管理</a></li>
+                    <li><a href="http://www.xzjm.cn/xsgz/drjm.htm" target="_blank">德润经贸</a></li>
+                </ul>
+            </li>
+            <li><a href="http://www.xzjm.cn/zsjy" target="_blank">招生就业</a>
+            </li>
+            <li><a href="http://www.xzjm.cn/zcyd1.htm" target="_blank">政策园地</a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
